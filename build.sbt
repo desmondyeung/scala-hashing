@@ -1,24 +1,24 @@
+lazy val scala213               = "2.13.0"
 lazy val scala212               = "2.12.9"
 lazy val scala211               = "2.11.12"
-lazy val supportedScalaVersions = List(scala212, scala211)
 
 ThisBuild / organization := "com.desmondyeung"
-ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / scalaVersion := scala212
+ThisBuild / scalaVersion := scala213
+ThisBuild / crossScalaVersions := List(scala213, scala212, scala211)
 
 lazy val hashing = (project in file("."))
   .settings(
-    name := "Hashing",
+    name := "Scala-Hashing",
     scalacOptions ++= {
       CrossVersion.partialVersion(scalaVersion.value) match {
-        case Some((2, n)) if n >= 12 ⇒
+        case Some((2, n)) if n >= 12 =>
           Seq(
             "-opt:l:method,inline",
             "-opt-inline-from:com.desmondyeung.hashing.**",
             "-opt-warnings",
             "-deprecation",
             "-Ywarn-dead-code")
-        case _ ⇒
+        case _ =>
           Seq("-optimize", "-deprecation", "-Ywarn-dead-code")
       }
     },

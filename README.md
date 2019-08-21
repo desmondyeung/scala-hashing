@@ -51,9 +51,9 @@ trait Hash64 {
   def hashByte(input: Byte, seed: Long): Long
   def hashInt(input: Int, seed: Long): Long
   def hashLong(input: Long, seed: Long): Long
-  def hashByteArray(input: Array[Byte], seed: Long): Long =
+  def hashByteArray(input: Array[Byte], seed: Long): Long
   def hashByteArray(input: Array[Byte], offset: Int, length: Int, seed: Long): Long
-  def hashByteBuffer(input: ByteBuffer, seed: Long): Long =
+  def hashByteBuffer(input: ByteBuffer, seed: Long): Long
   def hashByteBuffer(input: ByteBuffer, offset: Int, length: Int, seed: Long): Long
 }
 

@@ -1,0 +1,33 @@
+[info] # Run complete. Total time: 00:12:58
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] Benchmark                                (inputSize)   Mode  Cnt          Score         Error  Units
+[info] XxHash32Bench.com_desmondyeung_hashing             8  thrpt    5  181898630.061 ± 2086886.490  ops/s
+[info] XxHash32Bench.com_desmondyeung_hashing           128  thrpt    5   44161794.692 ±  499905.676  ops/s
+[info] XxHash32Bench.com_desmondyeung_hashing           512  thrpt    5   14488496.855 ±  107840.819  ops/s
+[info] XxHash32Bench.com_desmondyeung_hashing          1024  thrpt    5    7523643.321 ±  104558.725  ops/s
+[info] XxHash32Bench.com_desmondyeung_hashing          1536  thrpt    5    5005641.604 ±   52267.655  ops/s
+[info] XxHash32Bench.com_desmondyeung_hashing          2048  thrpt    5    3789585.515 ±   31996.067  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni               8  thrpt    5    7328440.319 ±  275575.767  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni             128  thrpt    5    5930950.315 ±  303366.575  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni             512  thrpt    5    3968051.273 ±  149722.290  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni            1024  thrpt    5    2771389.170 ±   33486.356  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni            1536  thrpt    5    2148733.148 ±  145690.835  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_jni            2048  thrpt    5    1720267.164 ±   77320.929  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure              8  thrpt    5  103689821.011 ± 2704414.707  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure            128  thrpt    5   19236302.722 ±  730586.182  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure            512  thrpt    5    5823303.478 ±  224930.690  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure           1024  thrpt    5    3066582.769 ±  150944.281  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure           1536  thrpt    5    2076760.547 ±   65112.334  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_pure           2048  thrpt    5    1582100.654 ±   74129.324  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe            8  thrpt    5  134161752.760 ± 5035419.628  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe          128  thrpt    5   40852921.273 ± 2042634.150  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe          512  thrpt    5   12788488.138 ±  472049.488  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe         1024  thrpt    5    7085539.188 ±  935685.614  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe         1536  thrpt    5    4837437.179 ±  248957.476  ops/s
+[info] XxHash32Bench.net_jpountz_xxhash_unsafe         2048  thrpt    5    3613914.693 ±   80983.807  ops/s
+[success] Total time: 782 s, completed Aug 20, 2019, 10:01:32 PM
+sbt:Hashing>

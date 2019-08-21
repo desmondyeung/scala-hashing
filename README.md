@@ -19,10 +19,10 @@ Benchmarked against various other open-source implementations
 * [Zero-Allocation-Hashing](https://github.com/OpenHFT/Zero-Allocation-Hashing) (XxHash64)
 
 ### MurmurHash3_32
-![MurmurHash3_32](https://github.com/desmondyeung/scala-hashing/blob/master/bench/src/main/resource/results/XxHash64.png)
+![MurmurHash3_32](https://github.com/desmondyeung/scala-hashing/blob/master/bench/src/main/resource/results/MurmurHash3_32.png)
 
 ### XxHash32
-![XxHash32](https://github.com/desmondyeung/scala-hashing/blob/master/bench/src/main/resource/results/XxHash64.png)
+![XxHash32](https://github.com/desmondyeung/scala-hashing/blob/master/bench/src/main/resource/results/XxHash32.png)
 
 ### XxHash64
 ![XxHash64](https://github.com/desmondyeung/scala-hashing/blob/master/bench/src/main/resource/results/XxHash64.png)

@@ -1,6 +1,6 @@
 # Scala-Hashing
 
-[![Build Status](https://api.travis-ci.org/desmondyeung/scala-hashing.svg)](https://travis-ci.org/desmondyeung/scala-hashing)
+[![Build Status](https://api.travis-ci.com/desmondyeung/scala-hashing.svg)](https://travis-ci.com/desmondyeung/scala-hashing)
 [![codecov.io](http://codecov.io/github/desmondyeung/scala-hashing/coverage.svg?branch=master)](http://codecov.io/github/desmondyeung/scala-hashing?branch=master)
 
 ## Overview

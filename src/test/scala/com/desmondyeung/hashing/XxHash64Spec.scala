@@ -16,26 +16,14 @@
 
 package com.desmondyeung.hashing
 
-import java.nio.{ByteBuffer, ByteOrder}
-import scala.util.Random
-import org.scalatest._
+import org.scalatest.FunSpec
 
-trait HashTest extends FunSpecLike {
-  val seed32 = Random.nextInt
-  val seed64 = Random.nextLong
+class XxHash64Spec extends FunSpec with Hash64Behaviors {
 
-  def byteBufferOfSize(size: Int, direct: Boolean = false): ByteBuffer = {
-    val array = new Array[Byte](size)
-    Random.nextBytes(array)
+  def referenceImpl(input: Array[Byte], seed: Long): Long =
+    net.jpountz.xxhash.XXHashFactory.fastestInstance.hash64.hash(input, 0, input.length, seed)
 
-    val bb = if (direct) {
-      ByteBuffer.allocateDirect(size)
-    } else {
-      ByteBuffer.allocate(size)
-    }
-    bb.order(ByteOrder.nativeOrder)
-    bb.put(array)
-    bb.rewind
-    bb
+  describe("XxHash64") {
+    it should behave like hash64(XxHash64, referenceImpl)
   }
 }

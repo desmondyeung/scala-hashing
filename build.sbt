@@ -2,13 +2,13 @@ lazy val scala213               = "2.13.0"
 lazy val scala212               = "2.12.9"
 lazy val scala211               = "2.11.12"
 
-ThisBuild / organization := "com.desmondyeung"
+ThisBuild / organization := "com.desmondyeung.hashing"
 ThisBuild / scalaVersion := scala213
 ThisBuild / crossScalaVersions := List(scala213, scala212, scala211)
 
 lazy val hashing = (project in file("."))
   .settings(
-    name := "Scala-Hashing",
+    name := "scala-hashing",
     scalacOptions ++= {
       CrossVersion.partialVersion(scalaVersion.value) match {
         case Some((2, n)) if n >= 12 =>
@@ -50,6 +50,20 @@ lazy val bench = (project in file("bench"))
   )
   .dependsOn(hashing % "compile->compile")
   .enablePlugins(JmhPlugin)
+
+publishMavenStyle := true
+
+publishTo in ThisBuild := {
+  val nexus = "https://oss.sonatype.org/"
+  if (isSnapshot.value)
+    Some("snapshots" at nexus + "content/repositories/snapshots")
+  else
+    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+}
+
+pomIncludeRepository := { _ => false }
+
+publishArtifact in Test := false
 
 pomExtra in ThisBuild := (<url>https://github.com/desmondyeung/scala-hashing</url>
   <licenses>

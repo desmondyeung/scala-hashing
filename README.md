@@ -45,7 +45,13 @@ To run a specific benchmark with custom settings
 bench/jmh:run -f 2 -wi 5 -i 5 XxHash64Bench
 ```
 
-## Examples
+## Getting Started
+
+```scala
+libraryDependencies += "com.desmondyeung.hashing" %% "scala-hashing" % "0.1.0"
+```
+
+### Examples
 
 This library defines the interfaces `Hash32` and `StreamingHash32` for computing 32-bit hashes and `Hash64` and `StreamingHash64` for computing 64-bit hashes. Classes extending `StreamingHash32` or `StreamingHash64` are not thread-safe.
 

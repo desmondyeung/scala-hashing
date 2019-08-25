@@ -2,6 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/desmondyeung/scala-hashing.svg)](https://travis-ci.org/desmondyeung/scala-hashing)
 [![codecov.io](http://codecov.io/github/desmondyeung/scala-hashing/coverage.svg?branch=master)](http://codecov.io/github/desmondyeung/scala-hashing?branch=master)
+[![Maven Central](https://img.shields.io/maven-central/v/com.desmondyeung.hashing/scala-hashing.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.desmondyeung.hashing/scala-hashing/)
 
 ## Overview
 Fast non-cryptographic hash functions for Scala. This library provides APIs for computing 32-bit and 64-bit hashes.

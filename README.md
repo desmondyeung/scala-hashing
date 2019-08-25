@@ -2,6 +2,7 @@
 
 [![Build Status](https://api.travis-ci.com/desmondyeung/scala-hashing.svg)](https://travis-ci.com/desmondyeung/scala-hashing)
 [![codecov.io](http://codecov.io/github/desmondyeung/scala-hashing/coverage.svg?branch=master)](http://codecov.io/github/desmondyeung/scala-hashing?branch=master)
+[![Maven Central](https://img.shields.io/maven-central/v/com.desmondyeung.hashing/scala-hashing.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.desmondyeung.hashing/scala-hashing/)
 
 ## Overview
 Fast non-cryptographic hash functions for Scala. This library provides APIs for computing 32-bit and 64-bit hashes.
@@ -45,7 +46,13 @@ To run a specific benchmark with custom settings
 bench/jmh:run -f 2 -wi 5 -i 5 XxHash64Bench
 ```
 
-## Examples
+## Getting Started
+
+```scala
+libraryDependencies += "com.desmondyeung.hashing" %% "scala-hashing" % "0.1.0"
+```
+
+### Examples
 
 This library defines the interfaces `Hash32` and `StreamingHash32` for computing 32-bit hashes and `Hash64` and `StreamingHash64` for computing 64-bit hashes. Classes extending `StreamingHash32` or `StreamingHash64` are not thread-safe.
 

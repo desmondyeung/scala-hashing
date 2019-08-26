@@ -11,7 +11,7 @@ Currently implemented hash functions
 * [MurmurHash3](https://github.com/aappleby/smhasher) (32-bit)
 * [XxHash](https://github.com/Cyan4973/xxHash) (32-bit and 64-bit)
 
-Hash functions in this library can be access via either a standard API for hashing primitives, byte arrays, or Java ByteBuffers (direct and non-direct), or a streaming API for hashing stream-like objects such as InputStreams, Java NIO Channels, or Akka Streams. Hash functions should produce consistent output regardless of platform or endianness.
+Hash functions in this library can be accessed via either a standard API for hashing primitives, byte arrays, or Java ByteBuffers (direct and non-direct), or a streaming API for hashing stream-like objects such as InputStreams, Java NIO Channels, or Akka Streams. Hash functions should produce consistent output regardless of platform or endianness.
 
 This library uses the `sun.misc.Unsafe` API internally. I might explore using the `VarHandle` API introduced in Java 9 in the future, but am currently still supporting Java 8.
 
